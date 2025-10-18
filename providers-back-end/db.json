@@ -1,0 +1,133 @@
+[ {
+  "id" : "22222222-2222-2222-2222-222222222222",
+  "nombre" : "Proveedor B",
+  "razonSocial" : "Proveedor B S.R.L.",
+  "direccion" : "Calle Secundaria 45",
+  "createdAt" : "2025-01-02T00:00:00Z"
+}, {
+  "id" : "e8f901fb-0900-45ed-9d76-bcc127fbe737",
+  "nombre" : "Ilder Tocto",
+  "razonSocial" : "katsu fit SA",
+  "direccion" : "Calle Secundaria 45",
+  "createdAt" : "2025-10-18T14:22:48.492805600Z"
+}, {
+  "id" : "ab9c046b-17ac-4a64-82ea-a83bdb764093",
+  "nombre" : "Persistent Test Provider",
+  "razonSocial" : "Persistent S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:08:48.460889300Z"
+}, {
+  "id" : "9f16be8f-51dd-4f47-a839-dbcb1a94cc18",
+  "nombre" : "Integration Test Provider",
+  "razonSocial" : "Integration Test S.A.",
+  "direccion" : "Integration Test Address 123",
+  "createdAt" : "2025-10-18T19:08:48.500911Z"
+}, {
+  "id" : "bda27940-80e1-4b97-914c-672280a03598",
+  "nombre" : "Pagination Test Provider 1",
+  "razonSocial" : "Pagination S.A. 1",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:08:48.514258100Z"
+}, {
+  "id" : "e044a97a-34bc-4cad-a1dd-310e452bf2f6",
+  "nombre" : "Pagination Test Provider 2",
+  "razonSocial" : "Pagination S.A. 2",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:08:48.516773200Z"
+}, {
+  "id" : "53f67cf5-6dac-4484-a832-7c735d1c6c54",
+  "nombre" : "Pagination Test Provider 3",
+  "razonSocial" : "Pagination S.A. 3",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:08:48.521132400Z"
+}, {
+  "id" : "85955bd0-f2d1-4068-b413-42c854442eea",
+  "nombre" : "Pagination Test Provider 4",
+  "razonSocial" : "Pagination S.A. 4",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:08:48.523106500Z"
+}, {
+  "id" : "e6e6cf2d-ed1c-487b-ae95-7b224bd9cea1",
+  "nombre" : "Pagination Test Provider 5",
+  "razonSocial" : "Pagination S.A. 5",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:08:48.527113900Z"
+}, {
+  "id" : "27d4fd02-6c11-4780-96cd-c0d0adf2ee66",
+  "nombre" : "Unique Integration Provider",
+  "razonSocial" : "Unique S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:08:48.552112400Z"
+}, {
+  "id" : "464ee15c-27f3-46cd-a571-9ee307489f27",
+  "nombre" : "Persistent Test Provider 1760815181142",
+  "razonSocial" : "Persistent S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:19:41.217571800Z"
+}, {
+  "id" : "d61983c3-e731-4002-b7f0-13d51ec49f73",
+  "nombre" : "Integration Test Provider 1760815181265",
+  "razonSocial" : "Integration Test S.A.",
+  "direccion" : "Integration Test Address 123",
+  "createdAt" : "2025-10-18T19:19:41.268560300Z"
+}, {
+  "id" : "396b5d2b-598d-4a04-a605-cfd99d734ec8",
+  "nombre" : "Pagination Test Provider 1760815181275-1",
+  "razonSocial" : "Pagination S.A. 1",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:19:41.280558700Z"
+}, {
+  "id" : "a1b38b3d-77d2-44a4-80ba-352510c94c47",
+  "nombre" : "Pagination Test Provider 1760815181275-2",
+  "razonSocial" : "Pagination S.A. 2",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:19:41.284558500Z"
+}, {
+  "id" : "d6b0aee2-5410-4838-b067-7a34968fb224",
+  "nombre" : "Pagination Test Provider 1760815181275-3",
+  "razonSocial" : "Pagination S.A. 3",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:19:41.287558100Z"
+}, {
+  "id" : "a354ca7a-d902-4f51-95b7-9c14db6c943f",
+  "nombre" : "Pagination Test Provider 1760815181275-4",
+  "razonSocial" : "Pagination S.A. 4",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:19:41.291560600Z"
+}, {
+  "id" : "81d8c2b5-7bd6-4175-bb4d-ffcb47813fa3",
+  "nombre" : "Pagination Test Provider 1760815181275-5",
+  "razonSocial" : "Pagination S.A. 5",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:19:41.295557400Z"
+}, {
+  "id" : "4fff9d14-a4e2-4d03-a64d-ac776174bd99",
+  "nombre" : "Unique Integration Provider 1760815181327",
+  "razonSocial" : "Unique S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:19:41.329791800Z"
+}, {
+  "id" : "632ed266-a7dc-4ed1-b981-5089e2ae02b4",
+  "nombre" : "Persistent Test Provider 1760815294888",
+  "razonSocial" : "Persistent S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:21:35.111810200Z"
+}, {
+  "id" : "79a5be17-aad8-4ef9-9aea-403ae08bf424",
+  "nombre" : "Unique Integration Provider 1760815295259",
+  "razonSocial" : "Unique S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:21:35.262885100Z"
+}, {
+  "id" : "56d8cd6d-1f3c-4778-a554-5ae07db92e86",
+  "nombre" : "Persistent Test Provider 1760816243259",
+  "razonSocial" : "Persistent S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:37:23.462175Z"
+}, {
+  "id" : "0c90dba8-6088-4383-9705-c743acdf7a9a",
+  "nombre" : "Unique Integration Provider 1760816243577",
+  "razonSocial" : "Unique S.A.",
+  "direccion" : null,
+  "createdAt" : "2025-10-18T19:37:23.581330100Z"
+} ]

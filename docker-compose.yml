@@ -1,0 +1,208 @@
+# =========================================
+# Docker Compose para Gapsi Providers Stack
+# =========================================
+# 
+# Orquestación completa de la aplicación:
+# - Frontend React (providers-frontend)
+# - Backend Spring Boot (providers-backend)
+#
+# Uso:
+#   docker-compose up -d              # Iniciar stack completo
+#   docker-compose up frontend        # Solo frontend
+#   docker-compose up backend         # Solo backend
+#   docker-compose down               # Detener todo
+#   docker-compose logs -f            # Ver logs
+#   docker-compose logs -f backend    # Ver logs del backend
+#
+# URLs:
+#   Frontend: http://localhost:3000
+#   Backend:  http://localhost:8080/api/v1/gapsi/info
+#
+# @author Ilder Tocto
+# @version 1.0.0
+# @since 2025-10-18
+
+services:
+  # =========================================
+  # Backend: Spring Boot API
+  # =========================================
+  backend:
+    build:
+      context: ./providers-back-end
+      dockerfile: Dockerfile
+    image: gapsi-providers-backend:latest
+    container_name: gapsi-providers-backend
+    
+    # Configuración de red
+    ports:
+      - "8080:8080"
+    
+    # Variables de entorno
+    environment:
+      - JAVA_OPTS=-Xmx512m -Xms256m -XX:+UseContainerSupport
+      - SERVER_PORT=8080
+      - APP_VERSION=1.0.0
+      - SPRING_PROFILES_ACTIVE=docker
+      - TZ=America/Mexico_City
+    
+    # Volúmenes para persistencia
+    volumes:
+      - providers-data:/app/data
+      - providers-logs:/app/logs
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/v1/gapsi/info"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    
+    # Política de reinicio
+    restart: unless-stopped
+    
+    # Configuración de recursos
+    deploy:
+      resources:
+        limits:
+          memory: 1G
+          cpus: '1.0'
+        reservations:
+          memory: 512M
+          cpus: '0.5'
+    
+    # Redes
+    networks:
+      - gapsi-network
+    
+    # Etiquetas
+    labels:
+      - "com.gapsi.service=backend"
+      - "com.gapsi.stack=providers"
+
+  # =========================================
+  # Frontend: React Application
+  # =========================================
+  frontend:
+    build:
+      context: ./providers-front-end
+      dockerfile: Dockerfile
+      args:
+        - REACT_APP_API_URL=http://localhost:8080/api/v1
+    image: gapsi-providers-frontend:latest
+    container_name: gapsi-providers-frontend
+    
+    # Configuración de red
+    ports:
+      - "3000:80"
+    
+    # Variables de entorno
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=http://localhost:8080/api/v1
+      - TZ=America/Mexico_City
+    
+    # Dependencias
+    depends_on:
+      backend:
+        condition: service_healthy
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    
+    # Política de reinicio
+    restart: unless-stopped
+    
+    # Configuración de recursos
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: '0.5'
+        reservations:
+          memory: 128M
+          cpus: '0.25'
+    
+    # Redes
+    networks:
+      - gapsi-network
+    
+    # Etiquetas
+    labels:
+      - "com.gapsi.service=frontend"
+      - "com.gapsi.stack=providers"
+
+  # =========================================
+  # Frontend Development (Opcional)
+  # =========================================
+  frontend-dev:
+    build:
+      context: ./providers-front-end
+      dockerfile: Dockerfile.dev
+    container_name: gapsi-providers-frontend-dev
+    
+    # Configuración de red
+    ports:
+      - "3001:3000"
+    
+    # Variables de entorno
+    environment:
+      - NODE_ENV=development
+      - REACT_APP_API_URL=http://localhost:8080/api/v1
+      - CHOKIDAR_USEPOLLING=true
+    
+    # Volúmenes para desarrollo
+    volumes:
+      - ./providers-front-end/src:/app/src:ro
+      - ./providers-front-end/public:/app/public:ro
+    
+    # Dependencias
+    depends_on:
+      - backend
+    
+    # Redes
+    networks:
+      - gapsi-network
+    
+    # Solo para desarrollo
+    profiles:
+      - dev
+    
+    # Etiquetas
+    labels:
+      - "com.gapsi.service=frontend-dev"
+      - "com.gapsi.stack=providers"
+
+# =========================================
+# Volúmenes para persistencia
+# =========================================
+volumes:
+  # Datos del backend
+  providers-data:
+    driver: local
+    labels:
+      - "com.gapsi.volume=backend-data"
+      - "com.gapsi.description=Backend application data and JSON files"
+  
+  # Logs del backend
+  providers-logs:
+    driver: local
+    labels:
+      - "com.gapsi.volume=backend-logs"
+      - "com.gapsi.description=Backend application logs"
+
+# =========================================
+# Redes
+# =========================================
+networks:
+  gapsi-network:
+    driver: bridge
+    name: gapsi-providers-network
+    labels:
+      - "com.gapsi.network=main"
+      - "com.gapsi.description=Main network for Gapsi Providers application stack"

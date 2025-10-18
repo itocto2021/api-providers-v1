@@ -1,0 +1,145 @@
+# =========================================
+# .dockerignore para Gapsi Providers API
+# =========================================
+# 
+# Archivos y directorios que no deben incluirse
+# en el contexto de Docker build para optimizar
+# el tiempo de construcción y tamaño de imagen.
+#
+# @author Ilder Tocto
+# @version 1.0.0
+# @since 2025-10-18
+
+# =========================================
+# Git y control de versiones
+# =========================================
+.git
+.gitignore
+.gitattributes
+.github/
+
+# =========================================
+# Maven
+# =========================================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# =========================================
+# IDE
+# =========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.metadata
+.loadpath
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+# =========================================
+# Archivos temporales del sistema
+# =========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =========================================
+# Logs y archivos temporales
+# =========================================
+*.log
+*.tmp
+*.temp
+logs/
+temp/
+
+# =========================================
+# Docker
+# =========================================
+Dockerfile
+.dockerignore
+docker-compose*.yml
+*.dockerfile
+
+# =========================================
+# Documentación y README
+# =========================================
+README.md
+README.txt
+CHANGELOG.md
+CONTRIBUTING.md
+LICENSE
+*.md
+
+# =========================================
+# Archivos de configuración local
+# =========================================
+.env
+.env.local
+.env.*.local
+application-local.properties
+application-dev.properties
+
+# =========================================
+# Archivos de test y cobertura
+# =========================================
+# Mantener src/test para que Maven pueda ejecutar tests durante build
+# Pero excluir reportes y archivos generados
+**/target/surefire-reports/
+**/target/site/
+coverage/
+*.coverage
+*.nyc_output
+
+# =========================================
+# Node.js (si hay frontend)
+# =========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================================
+# Archivos de respaldo
+# =========================================
+*.bak
+*.backup
+*.swp
+*.swo
+*~
+
+# =========================================
+# Archivos específicos del proyecto
+# =========================================
+# Comentar la siguiente línea si se quiere incluir datos de prueba
+# db.json
+# bd.json

@@ -1,0 +1,343 @@
+openapi: 3.0.3
+info:
+  title: Gapsi Providers API
+  version: 1.0.0
+  description: API para gestionar proveedores (ejemplo siguiendo API‑first)
+servers:
+  - url: http://localhost:8080/api/v1
+paths:
+  /gapsi/info:
+    get:
+      summary: Información de la aplicación
+      responses:
+        '200':
+          description: Información de bienvenida y versión
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mensaje:
+                    type: string
+                  version:
+                    type: string
+                required:
+                  - mensaje
+                  - version
+              example:
+                mensaje: "Bienvenido Candidato Ilder Tocto"
+                version: "1.0.0"
+        '401':
+          description: Unauthorized - credenciales faltantes o inválidas
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "No autorizado"
+                code: "UNAUTHORIZED"
+        '403':
+          description: Forbidden - acceso denegado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Prohibido"
+                code: "FORBIDDEN"
+        '500':
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Error interno del servidor"
+                code: "INTERNAL_ERROR"
+
+  /gapsi/providers:
+    get:
+      summary: Listar proveedores (paginado)
+      parameters:
+        - name: page
+          in: query
+          description: Número de página (base 0)
+          required: false
+          schema:
+            type: integer
+            default: 0
+            minimum: 0
+        - name: size
+          in: query
+          description: Tamaño de página
+          required: false
+          schema:
+            type: integer
+            default: 10
+            minimum: 1
+      responses:
+        '200':
+          description: Lista paginada de proveedores
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProvidersListResponse'
+              example:
+                total: 4
+                size: 10
+                page: 0
+                items:
+                  - id: "8d2c492c-2155-449f-a7f4-b3da64a6fa75"
+                    nombre: "Ilder Tocto c"
+                    razonSocial: "katsu fit SA"
+                    direccion: "Calle Secundaria 45"
+                    createdAt: "2025-10-18T14:23:00.581829600Z"
+        '400':
+          description: Bad Request - parámetros inválidos (`page`, `size`)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Parámetros de paginación inválidos"
+                code: "INVALID_REQUEST"
+        '401':
+          description: Unauthorized - autenticación requerida
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "No autorizado"
+                code: "UNAUTHORIZED"
+        '403':
+          description: Forbidden - acceso denegado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Prohibido"
+                code: "FORBIDDEN"
+        '500':
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Error interno del servidor"
+                code: "INTERNAL_ERROR"
+
+    post:
+      summary: Crear un proveedor
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProviderCreate'
+            example:
+              nombre: "Ilder Tocto c"
+              razonSocial: "katsu fit SA"
+              direccion: "Calle Secundaria 45"
+      responses:
+        '201':
+          description: Proveedor creado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Provider'
+              example:
+                id: "8d2c492c-2155-449f-a7f4-b3da64a6fa75"
+                nombre: "Ilder Tocto c"
+                razonSocial: "katsu fit SA"
+                direccion: "Calle Secundaria 45"
+                createdAt: "2025-10-18T14:23:00.581829600Z"
+        '400':
+          description: Bad Request - payload inválido / JSON mal formado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Payload inválido"
+                code: "INVALID_REQUEST"
+        '401':
+          description: Unauthorized - autenticación requerida
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Forbidden - sin permisos para crear
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '409':
+          description: Conflict - recurso duplicado (nombre ya existe)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Proveedor con el mismo nombre ya existe"
+                code: "CONFLICT"
+        '422':
+          description: Unprocessable Entity - validación de campos fallida
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Validación fallida"
+                code: "VALIDATION_ERROR"
+                details: "nombre: debe tener al menos 3 caracteres"
+        '500':
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Error interno del servidor"
+                code: "INTERNAL_ERROR"
+
+  /gapsi/providers/{id}:
+    delete:
+      summary: Eliminar un proveedor por id
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Eliminación exitosa con mensaje
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageResponse'
+              example:
+                message: "Proveedor eliminado correctamente"
+        '204':
+          description: Eliminación exitosa (sin contenido)
+        '400':
+          description: Id inválido (nulo o vacío)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "El id no puede ser nulo o vacío"
+                code: "INVALID_REQUEST"
+        '401':
+          description: Unauthorized - autenticación requerida
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '403':
+          description: Forbidden - sin permisos para eliminar
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          description: No encontrado - id no existe
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Proveedor con id 12265897-98b2-4b5f-a6dd-b43f6457eb8f no existe"
+                code: "NOT_FOUND"
+        '500':
+          description: Error interno del servidor
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Error interno del servidor"
+                code: "INTERNAL_ERROR"
+
+components:
+  schemas:
+    Provider:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        nombre:
+          type: string
+        razonSocial:
+          type: string
+        direccion:
+          type: string
+        createdAt:
+          type: string
+          format: date-time
+      required:
+        - id
+        - nombre
+        - createdAt
+
+    ProviderCreate:
+      type: object
+      properties:
+        nombre:
+          type: string
+        razonSocial:
+          type: string
+        direccion:
+          type: string
+      required:
+        - nombre
+
+    ProvidersListResponse:
+      type: object
+      properties:
+        total:
+          type: integer
+        size:
+          type: integer
+        page:
+          type: integer
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Provider'
+      required:
+        - total
+        - size
+        - page
+        - items
+
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+        code:
+          type: string
+          description: Código de error interno/cliente (ej. INVALID_REQUEST, NOT_FOUND, CONFLICT)
+        details:
+          type: string
+        timestamp:
+          type: string
+          format: date-time
+      required:
+        - error
+        - code
+
+    MessageResponse:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message

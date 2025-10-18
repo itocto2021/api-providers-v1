@@ -1,0 +1,49 @@
+# Dependencias de Node
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de build
+dist
+build
+
+# Archivos de desarrollo
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos de sistema
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de Git
+.git
+.gitignore
+
+# Archivos de IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Archivos de logs
+logs
+*.log
+
+# Archivos de testing
+coverage
+.nyc_output
+
+# Archivos de Docker
+Dockerfile
+.dockerignore
+
+# Archivos README
+README.md

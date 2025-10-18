@@ -1,0 +1,562 @@
+[
+  {
+    "id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+    "nombre": "TechSolutions Corp",
+    "razonSocial": "TechSolutions Corporation S.A. de C.V.",
+    "direccion": "Av. Tecnología 1001, Col. Innovación, CDMX",
+    "createdAt": "2024-01-15T08:30:00Z"
+  },
+  {
+    "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Constructora Omega",
+    "razonSocial": "Constructora Omega S.A.",
+    "direccion": "Blvd. Construcción 2500, Monterrey, NL",
+    "createdAt": "2024-01-16T09:15:00Z"
+  },
+  {
+    "id": "6ba7b811-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Alimentos del Norte",
+    "razonSocial": "Distribuidora de Alimentos del Norte S. de R.L.",
+    "direccion": "Calle Industria 450, Guadalajara, JAL",
+    "createdAt": "2024-01-17T10:00:00Z"
+  },
+  {
+    "id": "6ba7b812-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Textiles Modernos",
+    "razonSocial": "Textiles Modernos de México S.A.",
+    "direccion": "Av. Textil 789, Puebla, PUE",
+    "createdAt": "2024-01-18T11:45:00Z"
+  },
+  {
+    "id": "6ba7b813-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Servicios Logísticos Beta",
+    "razonSocial": "Beta Logística y Transporte S.A. de C.V.",
+    "direccion": "Carretera Federal 340, Tijuana, BC",
+    "createdAt": "2024-01-19T13:20:00Z"
+  },
+  {
+    "id": "6ba7b814-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Farmacéutica Central",
+    "razonSocial": "Laboratorios Farmacéuticos Central S.A.",
+    "direccion": "Zona Industrial 1200, León, GTO",
+    "createdAt": "2024-01-20T14:10:00Z"
+  },
+  {
+    "id": "6ba7b815-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Energía Renovable Plus",
+    "razonSocial": "Energía Renovable Plus S.A.P.I. de C.V.",
+    "direccion": "Parque Industrial 567, Querétaro, QRO",
+    "createdAt": "2024-01-21T15:30:00Z"
+  },
+  {
+    "id": "6ba7b816-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Manufacturas del Bajío",
+    "razonSocial": "Manufacturas del Bajío S. de R.L. de C.V.",
+    "direccion": "Calle Industrial 890, Aguascalientes, AGS",
+    "createdAt": "2024-01-22T16:45:00Z"
+  },
+  {
+    "id": "6ba7b817-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Distribuidora Nacional",
+    "razonSocial": "Distribuidora Nacional de Productos S.A.",
+    "direccion": "Av. Comercio 1500, Mérida, YUC",
+    "createdAt": "2024-01-23T08:00:00Z"
+  },
+  {
+    "id": "6ba7b818-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Metalmecánica Avanzada",
+    "razonSocial": "Industrias Metalmecánicas Avanzadas S.A.",
+    "direccion": "Zona Metalmecánica 234, San Luis Potosí, SLP",
+    "createdAt": "2024-01-24T09:30:00Z"
+  },
+  {
+    "id": "6ba7b819-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Comercializadora Integral",
+    "razonSocial": "Comercializadora Integral del Pacífico S.C.",
+    "direccion": "Puerto Comercial 678, Mazatlán, SIN",
+    "createdAt": "2024-01-25T10:15:00Z"
+  },
+  {
+    "id": "6ba7b81a-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Automotriz del Centro",
+    "razonSocial": "Grupo Automotriz del Centro S.A. de C.V.",
+    "direccion": "Av. Automotriz 1800, Toluca, MEX",
+    "createdAt": "2024-01-26T11:00:00Z"
+  },
+  {
+    "id": "6ba7b81b-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Químicos Industriales",
+    "razonSocial": "Química Industrial del Norte S.A.",
+    "direccion": "Complejo Químico 456, Saltillo, COAH",
+    "createdAt": "2024-01-27T12:30:00Z"
+  },
+  {
+    "id": "6ba7b81c-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Agroindustrias del Sureste",
+    "razonSocial": "Agroindustrias del Sureste S.P.R. de R.L.",
+    "direccion": "Zona Agrícola 789, Villahermosa, TAB",
+    "createdAt": "2024-01-28T13:45:00Z"
+  },
+  {
+    "id": "6ba7b81d-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Telecomunicaciones Digitales",
+    "razonSocial": "Telecomunicaciones Digitales de México S.A.",
+    "direccion": "Torre Digital 999, Ciudad de México, CDMX",
+    "createdAt": "2024-01-29T14:20:00Z"
+  },
+  {
+    "id": "6ba7b81e-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Materiales de Construcción Premier",
+    "razonSocial": "Premier Materiales de Construcción S.A.",
+    "direccion": "Av. Construcción 2100, Culiacán, SIN",
+    "createdAt": "2024-01-30T15:10:00Z"
+  },
+  {
+    "id": "6ba7b81f-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Servicios Financieros Gamma",
+    "razonSocial": "Gamma Servicios Financieros S.A. de C.V.",
+    "direccion": "Centro Financiero 567, Guadalajara, JAL",
+    "createdAt": "2024-02-01T16:00:00Z"
+  },
+  {
+    "id": "6ba7b820-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Plásticos y Polímeros",
+    "razonSocial": "Industria de Plásticos y Polímeros S.A.",
+    "direccion": "Parque Plásticos 345, Morelia, MICH",
+    "createdAt": "2024-02-02T08:30:00Z"
+  },
+  {
+    "id": "6ba7b821-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Hospitales y Equipos Médicos",
+    "razonSocial": "Equipos Médicos Hospitalarios S. de R.L.",
+    "direccion": "Zona Médica 678, Hermosillo, SON",
+    "createdAt": "2024-02-03T09:45:00Z"
+  },
+  {
+    "id": "6ba7b822-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Minería del Pacífico",
+    "razonSocial": "Minería del Pacífico S.A. de C.V.",
+    "direccion": "Zona Minera 123, La Paz, BCS",
+    "createdAt": "2024-02-04T10:30:00Z"
+  },
+  {
+    "id": "6ba7b823-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Consultores Especializados",
+    "razonSocial": "Consultores Especializados en TI S.C.",
+    "direccion": "Torre Consultoría 890, Cancún, QROO",
+    "createdAt": "2024-02-05T11:15:00Z"
+  },
+  {
+    "id": "6ba7b824-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Turismo y Hospitalidad",
+    "razonSocial": "Grupo Turismo y Hospitalidad S.A.",
+    "direccion": "Zona Hotelera 456, Puerto Vallarta, JAL",
+    "createdAt": "2024-02-06T12:00:00Z"
+  },
+  {
+    "id": "6ba7b825-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Papel y Cartón Industrial",
+    "razonSocial": "Industrias de Papel y Cartón S.A.",
+    "direccion": "Complejo Papelero 789, Xalapa, VER",
+    "createdAt": "2024-02-07T13:30:00Z"
+  },
+  {
+    "id": "6ba7b826-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Refrigeración Comercial",
+    "razonSocial": "Sistemas de Refrigeración Comercial S.A.",
+    "direccion": "Av. Refrigeración 234, Chihuahua, CHIH",
+    "createdAt": "2024-02-08T14:15:00Z"
+  },
+  {
+    "id": "6ba7b827-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Electrónicos del Futuro",
+    "razonSocial": "Electrónicos del Futuro S.A. de C.V.",
+    "direccion": "Zona Electrónica 567, Tijuana, BC",
+    "createdAt": "2024-02-09T15:00:00Z"
+  },
+  {
+    "id": "6ba7b828-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Transportes Ejecutivos",
+    "razonSocial": "Transportes Ejecutivos del Norte S.A.",
+    "direccion": "Terminal Transporte 890, Monterrey, NL",
+    "createdAt": "2024-02-10T16:30:00Z"
+  },
+  {
+    "id": "6ba7b829-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Bebidas y Refrescos",
+    "razonSocial": "Industria de Bebidas y Refrescos S.A.",
+    "direccion": "Planta Bebidas 123, Cuernavaca, MOR",
+    "createdAt": "2024-02-11T08:45:00Z"
+  },
+  {
+    "id": "6ba7b82a-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Muebles y Decoración",
+    "razonSocial": "Muebles y Decoración Premium S. de R.L.",
+    "direccion": "Zona Mueblera 456, Guadalajara, JAL",
+    "createdAt": "2024-02-12T09:30:00Z"
+  },
+  {
+    "id": "6ba7b82b-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Seguridad Industrial",
+    "razonSocial": "Sistemas de Seguridad Industrial S.A.",
+    "direccion": "Av. Seguridad 789, Puebla, PUE",
+    "createdAt": "2024-02-13T10:15:00Z"
+  },
+  {
+    "id": "6ba7b82c-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Calzado y Cuero",
+    "razonSocial": "Industrias del Calzado y Cuero S.A.",
+    "direccion": "Zona Zapatera 234, León, GTO",
+    "createdAt": "2024-02-14T11:00:00Z"
+  },
+  {
+    "id": "6ba7b82d-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Vidrio y Cristal",
+    "razonSocial": "Manufactura de Vidrio y Cristal S.A.",
+    "direccion": "Complejo Vidriero 567, Mexicali, BC",
+    "createdAt": "2024-02-15T12:30:00Z"
+  },
+  {
+    "id": "6ba7b82e-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Instrumentos de Precisión",
+    "razonSocial": "Instrumentos de Precisión Técnica S.A.",
+    "direccion": "Laboratorio Central 890, Querétaro, QRO",
+    "createdAt": "2024-02-16T13:45:00Z"
+  },
+  {
+    "id": "6ba7b82f-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Servicios Ambientales",
+    "razonSocial": "Servicios Ambientales Sustentables S.C.",
+    "direccion": "Eco Parque 123, Oaxaca, OAX",
+    "createdAt": "2024-02-17T14:20:00Z"
+  },
+  {
+    "id": "6ba7b830-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Petróleo y Gas Natural",
+    "razonSocial": "Petróleo y Gas Natural del Golfo S.A.",
+    "direccion": "Zona Petrolera 456, Coatzacoalcos, VER",
+    "createdAt": "2024-02-18T15:10:00Z"
+  },
+  {
+    "id": "6ba7b831-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Cerámicas Artísticas",
+    "razonSocial": "Cerámicas Artísticas de Talavera S.A.",
+    "direccion": "Taller Cerámico 789, Puebla, PUE",
+    "createdAt": "2024-02-19T16:00:00Z"
+  },
+  {
+    "id": "6ba7b832-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Joyería y Metales Preciosos",
+    "razonSocial": "Joyería y Metales Preciosos S. de R.L.",
+    "direccion": "Centro Joyero 234, Taxco, GRO",
+    "createdAt": "2024-02-20T08:30:00Z"
+  },
+  {
+    "id": "6ba7b833-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Deportes y Recreación",
+    "razonSocial": "Equipos Deportivos y Recreación S.A.",
+    "direccion": "Centro Deportivo 567, Guadalajara, JAL",
+    "createdAt": "2024-02-21T09:15:00Z"
+  },
+  {
+    "id": "6ba7b834-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Imprenta Digital",
+    "razonSocial": "Imprenta Digital Moderna S.A. de C.V.",
+    "direccion": "Zona Gráfica 890, Ciudad de México, CDMX",
+    "createdAt": "2024-02-22T10:45:00Z"
+  },
+  {
+    "id": "6ba7b835-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Cosméticos Naturales",
+    "razonSocial": "Cosméticos Naturales Orgánicos S.A.",
+    "direccion": "Laboratorio Cosmético 123, Morelia, MICH",
+    "createdAt": "2024-02-23T11:30:00Z"
+  },
+  {
+    "id": "6ba7b836-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Ferretería Industrial",
+    "razonSocial": "Ferretería Industrial del Bajío S.A.",
+    "direccion": "Almacén Industrial 456, Celaya, GTO",
+    "createdAt": "2024-02-24T12:15:00Z"
+  },
+  {
+    "id": "6ba7b837-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Jardinería y Paisajismo",
+    "razonSocial": "Jardinería y Paisajismo Verde S. de R.L.",
+    "direccion": "Vivero Principal 789, Xochimilco, CDMX",
+    "createdAt": "2024-02-25T13:00:00Z"
+  },
+  {
+    "id": "6ba7b838-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Limpieza Especializada",
+    "razonSocial": "Servicios de Limpieza Especializada S.A.",
+    "direccion": "Centro Limpieza 234, Toluca, MEX",
+    "createdAt": "2024-02-26T14:30:00Z"
+  },
+  {
+    "id": "6ba7b839-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Catering Gourmet",
+    "razonSocial": "Catering Gourmet Ejecutivo S.A. de C.V.",
+    "direccion": "Cocina Central 567, Polanco, CDMX",
+    "createdAt": "2024-02-27T15:45:00Z"
+  },
+  {
+    "id": "6ba7b83a-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Reciclaje Ecológico",
+    "razonSocial": "Reciclaje Ecológico Sustentable S.C.",
+    "direccion": "Planta Reciclaje 890, Naucalpan, MEX",
+    "createdAt": "2024-02-28T16:20:00Z"
+  },
+  {
+    "id": "6ba7b83b-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Fotografía Profesional",
+    "razonSocial": "Estudios de Fotografía Profesional S.A.",
+    "direccion": "Estudio Fotográfico 123, Monterrey, NL",
+    "createdAt": "2024-03-01T08:00:00Z"
+  },
+  {
+    "id": "6ba7b83c-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Artesanías Mexicanas",
+    "razonSocial": "Artesanías Mexicanas Tradicionales S. de R.L.",
+    "direccion": "Mercado Artesanal 456, Oaxaca, OAX",
+    "createdAt": "2024-03-02T09:30:00Z"
+  },
+  {
+    "id": "6ba7b83d-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Desarrollo de Software",
+    "razonSocial": "Desarrollo de Software Innovador S.A.",
+    "direccion": "Parque Tecnológico 789, Guadalajara, JAL",
+    "createdAt": "2024-03-03T10:15:00Z"
+  },
+  {
+    "id": "6ba7b83e-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Climatización Avanzada",
+    "razonSocial": "Sistemas de Climatización Avanzada S.A.",
+    "direccion": "Zona Clima 234, Hermosillo, SON",
+    "createdAt": "2024-03-04T11:00:00Z"
+  },
+  {
+    "id": "6ba7b83f-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Laboratorios Clínicos",
+    "razonSocial": "Laboratorios Clínicos Especializados S.A.",
+    "direccion": "Centro Médico 567, Puebla, PUE",
+    "createdAt": "2024-03-05T12:45:00Z"
+  },
+  {
+    "id": "6ba7b840-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Educación Virtual",
+    "razonSocial": "Plataformas de Educación Virtual S.A.",
+    "direccion": "Campus Digital 890, Ciudad de México, CDMX",
+    "createdAt": "2024-03-06T13:30:00Z"
+  },
+  {
+    "id": "6ba7b841-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Bienes Raíces Premium",
+    "razonSocial": "Bienes Raíces Premium del Centro S.A.",
+    "direccion": "Torre Inmobiliaria 123, Polanco, CDMX",
+    "createdAt": "2024-03-07T14:15:00Z"
+  },
+  {
+    "id": "6ba7b842-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Marinería y Pesca",
+    "razonSocial": "Industrias Marineras y Pesca S.A.",
+    "direccion": "Puerto Pesquero 456, Ensenada, BC",
+    "createdAt": "2024-03-08T15:00:00Z"
+  },
+  {
+    "id": "6ba7b843-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Confecciones Textiles",
+    "razonSocial": "Confecciones Textiles Modernas S. de R.L.",
+    "direccion": "Zona Textil 789, Puebla, PUE",
+    "createdAt": "2024-03-09T16:30:00Z"
+  },
+  {
+    "id": "6ba7b844-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Herramientas Especializadas",
+    "razonSocial": "Herramientas Especializadas Técnicas S.A.",
+    "direccion": "Almacén Herramientas 234, Guadalajara, JAL",
+    "createdAt": "2024-03-10T08:45:00Z"
+  },
+  {
+    "id": "6ba7b845-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Iluminación LED",
+    "razonSocial": "Sistemas de Iluminación LED S.A. de C.V.",
+    "direccion": "Fábrica LED 567, Tijuana, BC",
+    "createdAt": "2024-03-11T09:20:00Z"
+  },
+  {
+    "id": "6ba7b846-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Veterinaria y Mascotas",
+    "razonSocial": "Clínica Veterinaria y Mascotas S.C.",
+    "direccion": "Centro Veterinario 890, Mérida, YUC",
+    "createdAt": "2024-03-12T10:10:00Z"
+  },
+  {
+    "id": "6ba7b847-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Carpintería Fina",
+    "razonSocial": "Taller de Carpintería Fina S. de R.L.",
+    "direccion": "Taller Madera 123, Michoacán, MICH",
+    "createdAt": "2024-03-13T11:35:00Z"
+  },
+  {
+    "id": "6ba7b848-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Eventos y Protocolo",
+    "razonSocial": "Organización de Eventos y Protocolo S.A.",
+    "direccion": "Salón Eventos 456, Cancún, QROO",
+    "createdAt": "2024-03-14T12:20:00Z"
+  },
+  {
+    "id": "6ba7b849-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Consultoría Legal",
+    "razonSocial": "Despacho de Consultoría Legal S.C.",
+    "direccion": "Torre Legal 789, Ciudad de México, CDMX",
+    "createdAt": "2024-03-15T13:50:00Z"
+  },
+  {
+    "id": "6ba7b84a-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Robótica Industrial",
+    "razonSocial": "Sistemas de Robótica Industrial S.A.",
+    "direccion": "Parque Robótico 234, Querétaro, QRO",
+    "createdAt": "2024-03-16T14:25:00Z"
+  },
+  {
+    "id": "6ba7b84b-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Cultivos Hidropónicos",
+    "razonSocial": "Cultivos Hidropónicos Sustentables S.A.",
+    "direccion": "Invernadero Tech 567, Sinaloa, SIN",
+    "createdAt": "2024-03-17T15:40:00Z"
+  },
+  {
+    "id": "6ba7b84c-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Drones y Aeronáutica",
+    "razonSocial": "Drones y Sistemas Aeronáuticos S.A.",
+    "direccion": "Hangar Tecnológico 890, Monterrey, NL",
+    "createdAt": "2024-03-18T16:15:00Z"
+  },
+  {
+    "id": "6ba7b84d-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Biotecnología Avanzada",
+    "razonSocial": "Laboratorios de Biotecnología Avanzada S.A.",
+    "direccion": "Campus Biotech 123, Guadalajara, JAL",
+    "createdAt": "2024-03-19T08:30:00Z"
+  },
+  {
+    "id": "6ba7b84e-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Realidad Virtual",
+    "razonSocial": "Estudios de Realidad Virtual S.A. de C.V.",
+    "direccion": "Estudio VR 456, Ciudad de México, CDMX",
+    "createdAt": "2024-03-20T09:45:00Z"
+  },
+  {
+    "id": "6ba7b84f-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Inteligencia Artificial",
+    "razonSocial": "Soluciones de Inteligencia Artificial S.A.",
+    "direccion": "Lab AI 789, Guadalajara, JAL",
+    "createdAt": "2024-03-21T10:20:00Z"
+  },
+  {
+    "id": "6ba7b850-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Ciberseguridad Corporativa",
+    "razonSocial": "Ciberseguridad Corporativa Integral S.A.",
+    "direccion": "Centro Cyber 234, Monterrey, NL",
+    "createdAt": "2024-03-22T11:05:00Z"
+  },
+  {
+    "id": "6ba7b851-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Blockchain Solutions",
+    "razonSocial": "Blockchain Solutions México S.A. de C.V.",
+    "direccion": "Hub Blockchain 567, Ciudad de México, CDMX",
+    "createdAt": "2024-03-23T12:30:00Z"
+  },
+  {
+    "id": "6ba7b852-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Nanotecnología Médica",
+    "razonSocial": "Nanotecnología Médica Avanzada S.A.",
+    "direccion": "Instituto Nano 890, Puebla, PUE",
+    "createdAt": "2024-03-24T13:15:00Z"
+  },
+  {
+    "id": "6ba7b853-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Impresión 3D Industrial",
+    "razonSocial": "Impresión 3D Industrial Moderna S.A.",
+    "direccion": "Taller 3D 123, Querétaro, QRO",
+    "createdAt": "2024-03-25T14:50:00Z"
+  },
+  {
+    "id": "6ba7b854-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Vehículos Eléctricos",
+    "razonSocial": "Manufactura de Vehículos Eléctricos S.A.",
+    "direccion": "Planta EV 456, Tijuana, BC",
+    "createdAt": "2024-03-26T15:25:00Z"
+  },
+  {
+    "id": "6ba7b855-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Domótica Inteligente",
+    "razonSocial": "Sistemas de Domótica Inteligente S.A.",
+    "direccion": "Casa Inteligente 789, Guadalajara, JAL",
+    "createdAt": "2024-03-27T16:10:00Z"
+  },
+  {
+    "id": "6ba7b856-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Medicina Personalizada",
+    "razonSocial": "Centro de Medicina Personalizada S.A.",
+    "direccion": "Clínica Genómica 234, Ciudad de México, CDMX",
+    "createdAt": "2024-03-28T08:40:00Z"
+  },
+  {
+    "id": "6ba7b857-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Agricultura de Precisión",
+    "razonSocial": "Agricultura de Precisión Tech S.A.",
+    "direccion": "Campo Tecnológico 567, Sinaloa, SIN",
+    "createdAt": "2024-03-29T09:55:00Z"
+  },
+  {
+    "id": "6ba7b858-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Ciudades Inteligentes",
+    "razonSocial": "Soluciones para Ciudades Inteligentes S.A.",
+    "direccion": "Centro Smart City 890, Monterrey, NL",
+    "createdAt": "2024-03-30T10:35:00Z"
+  },
+  {
+    "id": "6ba7b859-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Computación Cuántica",
+    "razonSocial": "Laboratorio de Computación Cuántica S.A.",
+    "direccion": "Instituto Cuántico 123, Ciudad de México, CDMX",
+    "createdAt": "2024-03-31T11:20:00Z"
+  },
+  {
+    "id": "6ba7b85a-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Materiales Inteligentes",
+    "razonSocial": "Desarrollo de Materiales Inteligentes S.A.",
+    "direccion": "Lab Materiales 456, Guadalajara, JAL",
+    "createdAt": "2024-04-01T12:45:00Z"
+  },
+  {
+    "id": "6ba7b85b-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Terapias Génicas",
+    "razonSocial": "Centro de Terapias Génicas Avanzadas S.A.",
+    "direccion": "Instituto Genético 789, Puebla, PUE",
+    "createdAt": "2024-04-02T13:30:00Z"
+  },
+  {
+    "id": "6ba7b85c-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Exploración Espacial",
+    "razonSocial": "Tecnologías para Exploración Espacial S.A.",
+    "direccion": "Centro Espacial 234, Baja California, BC",
+    "createdAt": "2024-04-03T14:15:00Z"
+  },
+  {
+    "id": "6ba7b85d-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Fusión Nuclear",
+    "razonSocial": "Investigación en Fusión Nuclear S.A.",
+    "direccion": "Reactor Experimental 567, Querétaro, QRO",
+    "createdAt": "2024-04-04T15:50:00Z"
+  },
+  {
+    "id": "6ba7b85e-9dad-11d1-80b4-00c04fd430c8",
+    "nombre": "Metamateriales Avanzados",
+    "razonSocial": "Metamateriales Avanzados de México S.A.",
+    "direccion": "Centro Metamateriales 890, Monterrey, NL",
+    "createdAt": "2024-04-05T16:25:00Z"
+  }
+]
