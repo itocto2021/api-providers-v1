@@ -1,0 +1,1 @@
+// Este archivo define tipos TypeScript personalizados que se pueden utilizar en la aplicación para mejorar la verificación de tipos.
